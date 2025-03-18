@@ -1,4 +1,4 @@
-import Image from "next/image"
+cdimport Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Shield, Bell, Smartphone, Thermometer, Wifi, Users, Clock, ChevronRight, ArrowRight } from "lucide-react"
