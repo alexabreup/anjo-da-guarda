@@ -7,6 +7,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/anjo-da-guarda',
   eslint: {
     ignoreDuringBuilds: true,
   },
