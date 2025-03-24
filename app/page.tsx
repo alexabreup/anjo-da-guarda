@@ -1,4 +1,4 @@
-cdimport Image from "next/image"
+import Image from "next/image" // Fix typo: "imag" -> "image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Shield, Bell, Smartphone, Thermometer, Wifi, Users, Clock, ChevronRight, ArrowRight } from "lucide-react"
@@ -365,4 +365,3 @@ export default function Home() {
     </div>
   )
 }
-
