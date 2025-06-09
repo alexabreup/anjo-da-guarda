@@ -368,18 +368,20 @@ export default function Home() {
               <span className="font-bold">Anjo da Guarda</span>
             </div>
             <div className="flex items-center gap-4 mt-2">
-              <img
+              <Image
                 src="/SENAI_Sao_Paulo_logo.png"
                 alt="SENAI São Paulo Logo"
-                width={80}
-                height={30}
+                width={120}
+                height={40}
+                unoptimized
                 style={{ objectFit: 'contain' }}
               />
-              <img
+              <Image
                 src="/senai-saga-logo-dark-new.png"
                 alt="SENAI SAGA Logo"
-                width={80}
-                height={30}
+                width={120}
+                height={40}
+                unoptimized
                 style={{ objectFit: 'contain' }}
               />
             </div>
