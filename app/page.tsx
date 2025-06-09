@@ -357,14 +357,30 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/logo.svg"
-              alt="Anjo da Guarda Logo"
-              width={40}
-              height={40}
-            />
-            <span className="font-bold">Anjo da Guarda</span>
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-2">
+              <Image
+                src="/logo.svg"
+                alt="Anjo da Guarda Logo"
+                width={40}
+                height={40}
+              />
+              <span className="font-bold">Anjo da Guarda</span>
+            </div>
+            <div className="flex items-center gap-4 mt-2">
+              <Image
+                src="/SENAI_Sao_Paulo_logo.png"
+                alt="SENAI São Paulo Logo"
+                width={80}
+                height={30}
+              />
+              <Image
+                src="/senai-saga-logo-dark.png"
+                alt="SENAI SAGA Logo"
+                width={80}
+                height={30}
+              />
+            </div>
           </div>
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Projeto Anjo da Guarda. Todos os direitos reservados.
