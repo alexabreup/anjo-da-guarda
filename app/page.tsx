@@ -1,4 +1,4 @@
-import Image from "next/image" // Fix typo: "imag" -> "image"
+import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Shield, Bell, Smartphone, Thermometer, Wifi, Users, Clock, ChevronRight, ArrowRight } from "lucide-react"
@@ -8,9 +8,16 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-24 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Shield className="h-8 w-8 text-primary" />
+            <div className="m-[10px]">
+              <Image
+                src="/logo.svg"
+                alt="Anjo da Guarda Logo"
+                width={110}
+                height={110}
+              />
+            </div>
             <span className="text-xl font-bold">Anjo da Guarda</span>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -27,7 +34,7 @@ export default function Home() {
               Contato
             </Link>
           </nav>
-          <Button>Saiba Mais</Button>
+          <Button>Login</Button>
         </div>
       </header>
 
@@ -37,7 +44,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/5 z-10" />
           <div className="relative h-[600px] w-full overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=1200"
+              src="/crianca-protegida-head.png"
               alt="Criança em um carro"
               fill
               className="object-cover"
@@ -119,8 +126,8 @@ export default function Home() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Termômetro mostrando alta temperatura"
+                  src="/crianca-2.png"
+                  alt="Criança em um veículo"
                   fill
                   className="object-cover"
                 />
@@ -191,8 +198,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[500px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
-                  alt="Diagrama do sistema Anjo da Guarda"
+                  src="/cranca-3.png"
+                  alt="Criança no veículo com sistema Anjo da Guarda"
                   fill
                   className="object-cover"
                 />
@@ -288,17 +295,22 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[1, 2, 3, 4].map((member) => (
-                <div key={member} className="text-center">
+              {[
+                { id: 1, name: "Alexandre de A. Pereira", image: "/alex.jpg" },
+                { id: 2, name: "Andre Luiz F. Filho" },
+                { id: 3, name: "Felipe Gianini" },
+                { id: 4, name: "Luís Gustavo de L. Pinheiro" }
+              ].map((member) => (
+                <div key={member.id} className="text-center">
                   <div className="relative h-64 w-64 mx-auto rounded-full overflow-hidden mb-4">
                     <Image
-                      src={`/placeholder.svg?height=256&width=256`}
-                      alt={`Membro da equipe ${member}`}
+                      src={member.image || `/placeholder.svg?height=256&width=256`}
+                      alt={`Membro da equipe ${member.name}`}
                       fill
                       className="object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-bold">Membro da Equipe</h3>
+                  <h3 className="text-xl font-bold">{member.name}</h3>
                   <p className="text-muted-foreground">Estudante de Eletrônica Industrial</p>
                 </div>
               ))}
@@ -329,7 +341,7 @@ export default function Home() {
                   Projeto Integrador - Tecnologia em Eletrônica Industrial - SENAI
                 </p>
                 <Link
-                  href="https://github.com/alexabreup/tei2025/blob/main/print3/README.md"
+                  href="https://github.com/alexabreup/anjo-da-guarda"
                   target="_blank"
                   className="text-primary hover:underline inline-flex items-center gap-1 mt-2"
                 >
@@ -346,7 +358,12 @@ export default function Home() {
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Shield className="h-6 w-6 text-primary" />
+            <Image
+              src="/logo.svg"
+              alt="Anjo da Guarda Logo"
+              width={40}
+              height={40}
+            />
             <span className="font-bold">Anjo da Guarda</span>
           </div>
           <p className="text-sm text-muted-foreground">
