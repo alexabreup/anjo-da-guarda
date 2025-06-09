@@ -369,14 +369,14 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-4 mt-2">
               <img
-                src="/SENAI_Sao_Paulo_logo.png"
+                src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png"
                 alt="SENAI São Paulo Logo"
                 width={80}
                 height={30}
                 style={{ objectFit: 'contain' }}
               />
               <img
-                src="/senai-saga-logo-dark.png"
+                src="https://www.fieb.org.br/midia/2019/5/senai-logo.png"
                 alt="SENAI SAGA Logo"
                 width={80}
                 height={30}
