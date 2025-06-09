@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/tei2025/print3',
+  // basePath removido para corrigir problemas de deploy no Netlify
   images: {
     unoptimized: true,
   },
