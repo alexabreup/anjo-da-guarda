@@ -54,10 +54,10 @@ export default function Home() {
           <div className="absolute inset-0 flex items-center z-20">
             <div className="container">
               <div className="max-w-2xl space-y-4">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
                   Proteção que salva vidas
                 </h1>
-                <p className="text-xl text-muted-foreground">
+                <p className="text-xl text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">
                   Sistema de monitoramento eletrônico veicular que detecta e alerta a presença de pessoas, crianças e
                   animais esquecidos no veículo.
                 </p>
