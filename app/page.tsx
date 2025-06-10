@@ -376,12 +376,12 @@ export default function Home() {
                 unoptimized
                 style={{ objectFit: 'contain' }}
               />
-              <Image
-                src="/senai-saga-logo-dark.png"
+              {/* Usando tag img padrão para resolver problema de carregamento */}
+              <img
+                src="/senai-saga-logo-dark-new.png"
                 alt="SENAI SAGA Logo"
                 width={120}
                 height={40}
-                unoptimized
                 style={{ objectFit: 'contain' }}
               />
             </div>
