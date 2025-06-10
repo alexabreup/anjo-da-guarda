@@ -377,7 +377,7 @@ export default function Home() {
                 style={{ objectFit: 'contain' }}
               />
               <Image
-                src="/senai-saga-logo-dark-new.png"
+                src="/senai-saga-logo-dark.png"
                 alt="SENAI SAGA Logo"
                 width={120}
                 height={40}
